@@ -16,15 +16,15 @@
 
 <body>
     <!--Jumbotron for Title-->
-    <div class="jumbotron container-fluid mt-2 text-center p-2">
-        <h1> <strong>Weather Dashboard</strong></h1>
+    <div class="jumbotron container-fluid">
+        <h1>Weather Dashboard</h1>
     </div>
     <div class="container">
         <!--Row for searching a city-->
         <div class="row">
-            <div class="col-sm-4 bg-light">
+            <div class="col-sm-4 ">
                 <!--Create an HTML form for handling the inputs-->
-                <h4 class="pt-1"><strong>Search for a City:</strong></h4>
+                <h4>Search for a City:</h4>
                 <!--Creates the text box for capturing the search city Name-->
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" id="search-city" aria-label="City Search"
@@ -41,9 +41,9 @@
                 </ul>
             </div>
             <div class="col-sm-8">
-                <div class="row ml-2 border border-dark rounded">
+                <div class="row ml-2 border">
                     <div class="col-sm-12" id="current-weather">
-                        <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                        <h3 class="city-name" id="current-city"></h3>
                         <p>Temperature:<span class="current" id="temperature"></span></p>
                         <p>Humidity:<span class="current" id="humidity"></span></p>
                         <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
@@ -55,40 +55,39 @@
                 <!--Row for 5 Day Forecast-->
                 <div class="col-sm-12" id="future-weather">
                     <h3>5-Day Forecast:</h3>
-                    <div class="row text-light">
-                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                            <p id="fDate0"></p>
-                            <p id="fImg0"></p>
-                            <p>Temp:<span id="fTemp0"></span></p>
-                            <p>Humidity:<span id="fHumidity0"></span></p>
+                    <div class="row">
+                        <div class="col-sm-4 forecast border ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date0"></p>
+                            <p id="Img0"></p>
+                            <p>Temp:<span id="Temp0"></span></p>
+                            <p>Humidity:<span id="Humidity0"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                            <p id="fDate1"></p>
-                            <p id="fImg1"></p>
-                            <p>Temp:<span id="fTemp1"></span></p>
-                            <p>Humidity:<span id="fHumidity1"></span></p>
+                        <div class="col-sm-4 forecast border ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date1"></p>
+                            <p id="Img1"></p>
+                            <p>Temp:<span id="Temp1"></span></p>
+                            <p>Humidity:<span id="Humidity1"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                            <p id="fDate2"></p>
-                            <p id="fImg2"></p>
-                            <p>Temp:<span id="fTemp2"></span></p>
-                            <p>Humidity:<span id="fHumidity2"></span></p>
+                        <div class="col-sm-4 forecast border ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date2"></p>
+                            <p id="Img2"></p>
+                            <p>Temp:<span id="Temp2"></span></p>
+                            <p>Humidity:<span id="Humidity2"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                            <p id="fDate3"></p>
-                            <p id="fImg3"></p>
-                            <p>Temp:<span id="fTemp3"></span></p>
-                            <p>Humidity:<span id="fHumidity3"></span></p>
+                        <div class="col-sm-4 forecast border ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date3"></p>
+                            <p id="Img3"></p>
+                            <p>Temp:<span id="Temp3"></span></p>
+                            <p>Humidity:<span id="Humidity3"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                            <p id="fDate4"></p>
-                            <p id="fImg4"></p>
-                            <p>Temp:<span id="fTemp4"></span></p>
-                            <p>Humidity:<span id="fHumidity4"></span></p>
+                        <div class="col-sm-4 forecast border ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date4"></p>
+                            <p id="Img4"></p>
+                            <p>Temp:<span id="Temp4"></span></p>
+                            <p>Humidity:<span id="Humidity4"></span></p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
